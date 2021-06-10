@@ -28,7 +28,7 @@ jobs:
       with:
         github-token: ${{ secrets.github_token }}
         pom-path: ./pom-deploy.xml
-        version-prefix: pre-
+        version-prefix: dep-
 
     - name: Print Version
       run: "echo 'New Version: ${{steps.bump.outputs.version}}'"
