@@ -15,14 +15,14 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Bump Version main
-      id: bump
+      id: bump-main
       uses: E-Health/maven-version-bump-action@v4.1
       with:
         github-token: ${{ secrets.github_token }}
         version-prefix: pre-
 
     - name: Bump Version deploy
-      id: bump
+      id: bump-deploy
       uses: E-Health/maven-version-bump-action@v4.1
       with:
         github-token: ${{ secrets.github_token }}
